@@ -117,6 +117,7 @@ console.log("This is for the external javascript file");
 // false && true = false
 // true && true = true
 // true && false = false
+
 // let num1 = 5;
 // let num2 = 3;
 // let num3 = 8;
@@ -143,90 +144,131 @@ console.log("This is for the external javascript file");
 //  console.log(!response)
 
 
-// =============JS Functions================
-function displayClass() {
-    console.log("This is frontend development live class");
+// // =============JS Functions================
+// function displayClass() {
+//     console.log("This is frontend development live class");
+// }
+
+// displayClass();
+
+// // const firstname = "Amara";
+// // const lastname = "Blessing";
+// let age = 30;
+
+// function displayNames(firstName, lastName) {
+//     console.log(`My first name is ${firstName}, my last name is ${lastName} and my age is ${age}`);
+// }
+
+// displayNames("Samuel", "Bunmi");
+// displayNames("Amara", "Blessing");
+// displayNames("George", "Jude")
+
+
+// function multiplyValues(a, b, c, d){
+//     return a * b * c * d;
+//     console.log(a*b*c*d)
+// }
+
+// let result = multiplyValues(2, 4, 5, 10);
+// console.log(result);
+// console.log(multiplyValues(2,4,5,2));
+
+
+// function frontend() {
+//     console.log("This is a JS class");
+//     console.log("This is Axia Africa");
+//     return 2+2;
+//     console.log("This is cohort 10");
+//     console.log("something")
+// }
+
+// console.log("THis should work")
+
+// frontend();
+// console.log(frontend());
+
+
+// // Function Expression, Anonymous FUnction
+
+// let sayHello = function() {
+//     console.log("Hiiii");
+// }
+
+// let greetUser = function(name) {
+//     console.log(`Hi ${name}, welcome to this class!`);
+// }
+
+// sayHello();
+// greetUser("Dee man")
+
+
+
+// // Arrow function
+// const axia = () => {
+//     console.log("Axia Africa!!!")
+// }
+
+// const addNumbers = (a, b) => {
+//     console.log(a + b)
+// }
+
+// axia();
+// axia();
+// axia();
+// axia();
+// axia();
+// axia();
+// axia();
+// axia();
+// axia();
+// axia();
+// axia();
+// axia();
+// axia();
+// axia();
+// axia();
+// axia();
+// addNumbers(10, 30)
+
+
+// ======== Conditionals =======
+// syntax
+// if(condition) {
+//     block of codes
+// }
+
+let age = 50;
+
+if(age > 50) {
+    console.log("You are old");
+} else if(age > 40){
+    console.log("You are partially old");
+} else if(age > 30) {
+    console.log("You are kinda old");
+} else if(age > 20) {
+    console.log("You are a youth");
+} else {
+    console.log("You are young")
 }
 
-displayClass();
 
-// const firstname = "Amara";
-// const lastname = "Blessing";
-let age = 30;
+let height = 200;
+let isRegistered = false;
 
-function displayNames(firstName, lastName) {
-    console.log(`My first name is ${firstName}, my last name is ${lastName} and my age is ${age}`);
+if(height >= 150 && isRegistered){
+    console.log("You are qualified for the competition");
+} else {
+    console.log("You should probably eat more beans");
 }
 
-displayNames("Samuel", "Bunmi");
-displayNames("Amara", "Blessing");
-displayNames("George", "Jude")
+let isPreviousWinner = true;
+let numberOfPlayers = 10;
 
-
-function multiplyValues(a, b, c, d){
-    return a * b * c * d;
-    console.log(a*b*c*d)
+if(isPreviousWinner || numberOfPlayers > 15){
+    console.log("You are freee to register your players");
+} else {
+    console.log("Go play in the championship!!!");
 }
 
-let result = multiplyValues(2, 4, 5, 10);
-console.log(result);
-console.log(multiplyValues(2,4,5,2));
 
-
-function frontend() {
-    console.log("This is a JS class");
-    console.log("This is Axia Africa");
-    return 2+2;
-    console.log("This is cohort 10");
-    console.log("something")
-}
-
-console.log("THis should work")
-
-frontend();
-console.log(frontend())
-
-
-// Function Expression, Anonymous FUnction
-
-let sayHello = function() {
-    console.log("Hiiii");
-}
-
-let greetUser = function(name) {
-    console.log(`Hi ${name}, welcome to this class!`);
-}
-
-sayHello();
-greetUser("Dee man")
-
-
-
-// Arrow function
-const axia = () => {
-    console.log("Axia Africa!!!")
-}
-
-const addNumbers = (a, b) => {
-    console.log(a + b)
-}
-
-axia();
-axia();
-axia();
-axia();
-axia();
-axia();
-axia();
-axia();
-axia();
-axia();
-axia();
-axia();
-axia();
-axia();
-axia();
-axia();
-addNumbers(10, 30)
-
-
+// Nested If
