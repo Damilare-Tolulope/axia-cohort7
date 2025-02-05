@@ -237,38 +237,103 @@ console.log("This is for the external javascript file");
 //     block of codes
 // }
 
-let age = 50;
+// let age = 50;
 
-if(age > 50) {
-    console.log("You are old");
-} else if(age > 40){
-    console.log("You are partially old");
-} else if(age > 30) {
-    console.log("You are kinda old");
-} else if(age > 20) {
-    console.log("You are a youth");
-} else {
-    console.log("You are young")
-}
+// if(age > 50) {
+//     console.log("You are old");
+// } else if(age > 40){
+//     console.log("You are partially old");
+// } else if(age > 30) {
+//     console.log("You are kinda old");
+// } else if(age > 20) {
+//     console.log("You are a youth");
+// } else {
+//     console.log("You are young")
+// }
 
 
-let height = 200;
-let isRegistered = false;
+// let height = 200;
+// let isRegistered = false;
 
-if(height >= 150 && isRegistered){
-    console.log("You are qualified for the competition");
-} else {
-    console.log("You should probably eat more beans");
-}
+// if(height >= 150 && isRegistered){
+//     console.log("You are qualified for the competition");
+// } else {
+//     console.log("You should probably eat more beans");
+// }
 
-let isPreviousWinner = true;
-let numberOfPlayers = 10;
+// let isPreviousWinner = true;
+// let numberOfPlayers = 10;
 
-if(isPreviousWinner || numberOfPlayers > 15){
-    console.log("You are freee to register your players");
-} else {
-    console.log("Go play in the championship!!!");
-}
+// if(isPreviousWinner || numberOfPlayers > 15){
+//     console.log("You are freee to register your players");
+// } else {
+//     console.log("Go play in the championship!!!");
+// }
 
 
 // Nested If
+// let score = 60;
+// let points = 80;
+// let name = "Muiz"
+
+// if(points > 60){
+//     console.log("You are fit");
+//     if(score > 50){
+//         console.log("You passed");
+//         if(name === "Muiz"){
+//             console.log("This is Muiz")
+//         }
+//     }else {
+//         console.log("You failed");
+//     }
+// }else {
+//     console.log("You are not fit")
+// }
+
+// if(points > 60 && score > 50 && name === "Muiz"){
+
+// }
+
+
+// Loops
+// For Loop
+
+// for(initialization; condition; increment){}
+
+// for(let i = 0; i < 10; i++){
+//     if(i === 3) { continue; }
+
+//     if(i === 7){
+//         break;
+//     }
+
+//     console.log(`This is the number ${i}`);
+// }
+
+// let num = 20;
+// ++num //21 21
+// num++ //20 //21
+
+
+// while loop
+
+// let count = 0;
+// while(count < 10) {
+//     console.log("My count is " + count);
+//     count++;
+// }
+
+
+// do while
+// let num = 10;
+
+// do {
+//     console.log(num);
+//     num++;
+// } while (num < 8);
+
+// let num1 = 0
+// do {
+//     console.log(num1);
+//     ++num1;
+// } while (num1 < 8);
