@@ -337,3 +337,150 @@ console.log("This is for the external javascript file");
 //     console.log(num1);
 //     ++num1;
 // } while (num1 < 8);
+
+
+// Objects in js
+// let person = {
+//     firstName: "Solomon",
+//     lastName: "Abayomi",
+//     age: 20,
+//     isMarried: true,
+//     hobbies: ['singing, sleeping'],
+//     address: {
+//         state: "Lagos",
+//         city: "Ikorodu",
+//         country: "Naija"
+//     }
+// }
+
+// let myAge = "age";
+
+// adding new properties
+// person.email = "abayomisolomon@axia.africa";
+// person.favouriteFood = "Rice and beans with 3days soaked egg"
+
+// updating existing properties
+// person.age = 24
+// person.address.city = "Gbagada"
+
+// delete a property
+// delete person.isMarried;
+
+// console.log(person.firstName)
+// console.log(person.lastName)
+// console.log(person['isMarried'])
+// console.log(person['hobbies'])
+// console.log(person[myAge]) // person["age"]
+// console.log(person);
+
+// looping an object
+// for...in loop
+
+// for(let key in person){
+//     console.log(`${key} has a value of ${person[key]}`)
+// }
+
+// const school = {
+//     location: "Abuja",
+//     bestCourse: "Mathematics",
+//     numberOfCourses: 20
+// }
+
+// for (let ik in school){
+//     console.log(`${ik} => ${school[ik]}`)
+// }
+
+// Arrays
+// const colors = ["blue", "black", "white", "yellow"];
+
+// console.log(colors)
+// console.log(colors[3]);
+
+// // modify array values
+// colors[1] = "pink";
+// // add new value
+// colors[4] = "brown"
+
+// console.log(colors)
+
+// colors.push("aqua");
+// colors.pop();
+// colors.shift();
+// colors.unshift("chocolate");
+
+// console.log(colors.length);
+
+// colors.splice(2, 2, "offwhite", "skyblue");
+// console.log(colors)
+
+// const newColors = ["navyblue", "darkblue"];
+
+// console.log(colors.concat(newColors));
+
+
+// colors.slice();
+
+// checking the data types
+// console.log(typeof "dee man")
+// console.log(typeof 200)
+// console.log(typeof person)
+// console.log(typeof colors)
+
+
+// DOM Manipulations
+// Selecting elements by id
+// const paragraph = document.getElementById("first");
+// console.log(paragraph);
+
+// const listOfItems = document.getElementsByClassName("item");
+// console.log(listOfItems);
+
+// const selectByQuery = document.querySelector("p");
+// console.log(selectByQuery);
+
+// const selectAllByQuery = document.querySelectorAll("div");
+// console.log(selectAllByQuery);
+
+// const selectByTagName = document.getElementsByTagName("h2");
+// console.log(selectByTagName);
+
+// CHange content
+const paragraph = document.getElementById("first");
+paragraph.innerHTML = "<span>This paragraph is the first!!</span>";
+paragraph.innerText = "<span>THis is from the innerText property </span>";
+console.log(paragraph)
+// paragraph.textContent = "THis is text content"
+
+// change attributes
+const link = document.querySelector('a');
+link.setAttribute("id", "clickToGoogle");
+link.setAttribute("id", "clickToGoogleButton");
+
+console.log(link.getAttribute('href'));
+
+link.removeAttribute("target");
+
+// change styles
+const elements = document.getElementsByClassName("item");
+elements[1].style.color = "blue";
+elements[1].style.fontSize = "42px";
+elements[1].style.fontWeight = "bold";
+elements[2].style.fontWeight = "bold";
+
+const img = document.querySelector("img")
+img.style.height = "500px"
+img.style.width = "1000px"
+
+// Adding and Removing elements
+const container = document.querySelector(".container");
+
+const newElement = document.createElement('p');
+
+newElement.innerHTML = "This is a new paragraph from javascript";
+newElement.style.fontSize = '30px';
+
+container.appendChild(newElement);
+
+const itemToRemove = document.querySelector('#remove');
+container.removeChild(itemToRemove);
+
