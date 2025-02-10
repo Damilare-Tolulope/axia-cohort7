@@ -448,7 +448,7 @@ console.log("This is for the external javascript file");
 const paragraph = document.getElementById("first");
 paragraph.innerHTML = "<span>This paragraph is the first!!</span>";
 paragraph.innerText = "<span>THis is from the innerText property </span>";
-console.log(paragraph)
+console.log(paragraph);
 // paragraph.textContent = "THis is text content"
 
 // change attributes
