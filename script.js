@@ -445,42 +445,81 @@ console.log("This is for the external javascript file");
 // console.log(selectByTagName);
 
 // CHange content
-const paragraph = document.getElementById("first");
-paragraph.innerHTML = "<span>This paragraph is the first!!</span>";
-paragraph.innerText = "<span>THis is from the innerText property </span>";
-console.log(paragraph);
+// const paragraph = document.getElementById("first");
+// paragraph.innerHTML = "<span>This paragraph is the first!!</span>";
+// paragraph.innerText = "<span>THis is from the innerText property </span>";
+// console.log(paragraph);
 // paragraph.textContent = "THis is text content"
 
 // change attributes
-const link = document.querySelector('a');
-link.setAttribute("id", "clickToGoogle");
-link.setAttribute("id", "clickToGoogleButton");
+// const link = document.querySelector('a');
+// link.setAttribute("id", "clickToGoogle");
+// link.setAttribute("id", "clickToGoogleButton");
 
-console.log(link.getAttribute('href'));
+// console.log(link.getAttribute('href'));
 
-link.removeAttribute("target");
+// link.removeAttribute("target");
 
 // change styles
-const elements = document.getElementsByClassName("item");
-elements[1].style.color = "blue";
-elements[1].style.fontSize = "42px";
-elements[1].style.fontWeight = "bold";
-elements[2].style.fontWeight = "bold";
+// const elements = document.getElementsByClassName("item");
+// elements[1].style.color = "blue";
+// elements[1].style.fontSize = "42px";
+// elements[1].style.fontWeight = "bold";
+// elements[2].style.fontWeight = "bold";
 
-const img = document.querySelector("img")
-img.style.height = "500px"
-img.style.width = "1000px"
+// const img = document.querySelector("img")
+// img.style.height = "500px"
+// img.style.width = "1000px"
 
 // Adding and Removing elements
-const container = document.querySelector(".container");
+// const container = document.querySelector(".container");
 
-const newElement = document.createElement('p');
+// const newElement = document.createElement('p');
 
-newElement.innerHTML = "This is a new paragraph from javascript";
-newElement.style.fontSize = '30px';
+// newElement.innerHTML = "This is a new paragraph from javascript";
+// newElement.style.fontSize = '30px';
 
-container.appendChild(newElement);
+// container.appendChild(newElement);
 
-const itemToRemove = document.querySelector('#remove');
-container.removeChild(itemToRemove);
+// const itemToRemove = document.querySelector('#remove');
+// container.removeChild(itemToRemove);
+
+
+// Events
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+const email = document.getElementById("email");
+const button = document.querySelector('button');
+const result = document.querySelector('#result');
+
+console.log(firstName);
+
+result.style.marginBottom = "10px";
+result.style.fontWeight = "600";
+result.style.maxWidth = "400px";
+
+result.setAttribute("class", "text-5xl text-[blue]")
+
+
+// button.addEventListener('click', () => {
+//     result.innerHTML = `${firstName.value} ${lastName.value} is my government name! and my email is ${email.value}`
+// });
+
+function printResult() {
+    result.innerHTML = `${firstName.value} ${lastName.value} is my government name! and my email is ${email.value}`
+}
+
+
+function printEmailValue() {
+    console.log(email.value);
+}
+
+setTimeout(() => {
+    console.log("I will show after 5secs");
+}, 5000);
+
+setInterval(() => {
+    console.log("Running every 2secs")
+}, 1000)
+
 
