@@ -486,40 +486,84 @@ console.log("This is for the external javascript file");
 
 
 // Events
-const firstName = document.getElementById("firstName");
-const lastName = document.getElementById("lastName");
-const email = document.getElementById("email");
-const button = document.querySelector('button');
-const result = document.querySelector('#result');
+// const firstName = document.getElementById("firstName");
+// const lastName = document.getElementById("lastName");
+// const email = document.getElementById("email");
+// const button = document.querySelector('button');
+// const result = document.querySelector('#result');
 
-console.log(firstName);
+// console.log(firstName);
 
-result.style.marginBottom = "10px";
-result.style.fontWeight = "600";
-result.style.maxWidth = "400px";
+// result.style.marginBottom = "10px";
+// result.style.fontWeight = "600";
+// result.style.maxWidth = "400px";
 
-result.setAttribute("class", "text-5xl text-[blue]")
+// result.setAttribute("class", "text-2xl text-[blue]")
 
 
 // button.addEventListener('click', () => {
 //     result.innerHTML = `${firstName.value} ${lastName.value} is my government name! and my email is ${email.value}`
 // });
 
-function printResult() {
-    result.innerHTML = `${firstName.value} ${lastName.value} is my government name! and my email is ${email.value}`
-}
+// function printResult() {
+//     result.innerHTML = `${firstName.value} ${lastName.value} is my government name! and my email is ${email.value}`
+
+//     setTimeout(() => {
+//         result.innerHTML = "";
+//     }, 3000);
+// }
 
 
-function printEmailValue() {
-    console.log(email.value);
-}
+// function printEmailValue() {
+//     console.log(email.value);
+// }
 
-setTimeout(() => {
-    console.log("I will show after 5secs");
-}, 5000);
+// setTimeout(() => {
+//     console.log("I will show after 5secs");
+// }, 5000);
 
-setInterval(() => {
-    console.log("Running every 2secs")
-}, 1000)
+// setInterval(() => {
+//     console.log("Running every 2secs")
+// }, 2000)
 
 
+// FETCH API
+fetch('https://jsonplaceholder.typicode.com/users')
+.then(res => res.json())
+.then(data => {
+    const listItems = document.querySelector('.list');
+    
+    // forEach function/method
+    data.forEach(i => {
+
+        const item = document.createElement("li");
+        item.style.fontSize = "12px";
+        item.style.fontWeight = "500";
+        item.textContent = `${i.id}. ${i.name} has an email of ${i.email}`
+        
+        listItems.appendChild(item);
+    })
+})
+.catch(error => console.log(error))
+
+
+
+
+
+fetch('https://jsonplaceholder.typicode.com/todos')
+.then(res => res.json())
+.then(data => {
+    const todoList = document.querySelector('.todoList');
+
+    data.slice(0, 10).forEach(item => {
+        const todo = document.createElement("li");
+
+        // tenary operation
+        todo.style.textDecoration = `${item.completed ? "line-through" : "none"}`
+        todo.innerText = item.title;
+
+        todoList.appendChild(todo);
+    })
+
+})
+.catch(error => console.log(error))
